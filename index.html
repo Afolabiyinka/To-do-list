@@ -3,37 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To do list</title>
+    <title>To do List</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
   </head>
-  <body class="light-mode">
-    <div id="theme-change">
-      <img src="/Icon/moon.svg" alt="">
-    </div>
-    <div class="container">
-      <div class="add-task">
-        <h1>Add a new task 🙂</h1>
-        <div id="task-screen">
-          <span>
-            <input
-              type="text"
-              placeholder="Eg.  Walk the dog"
-              id="task"
-            /><input id="task-date" placeholder="Date" type="time"/>
-          </span>
-          <span>
-            <button id="add-btn">
-              Add Task
-              <img src="/Icon/circle-plus.svg" alt="" height="30px" />
-            </button>
-          </span>
+  <body>
+    <main>
+      <div class="container">
+        <div class="task-screen">
+          <h1>Add a new task</h1>
+          <form action="">
+            <input type="search" placeholder="E.g Walk the dog" id="task" required/>
+            <img src="/Icon/circle-plus.svg" alt="" id="add-task" />
+          </form>
         </div>
-        <div id="completed-tasks">
-          <!-- <li></li> -->
-      
+        <div class="tasks">
+          <h1>To do's</h1>
+          <ul></ul>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
